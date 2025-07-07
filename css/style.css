@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'anek';
     src: url('../font/AnekLatinSemiExpanded-ExtraBold.woff2') format('woff2'),
         url('../font/AnekLatinSemiExpanded-ExtraBold.woff') format('woff');
@@ -6,29 +6,49 @@
     font-style: normal;
     font-display: swap;
 }
+*/
+
+@font-face {
+    font-family: 'Druk';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/DrukTextWideBoldTrial.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Tilda';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/TildaSans-VF.woff') format('woff');
+    src: url('../font/TildaSans-VF.woff2') format('woff2');
+    }
+
+    
 
 html {
         scroll-behavior: smooth;
       }
-  .manrope-regular,.manrope-semibold,.manrope-bold {
-  font-family: "Manrope", sans-serif;
+  .Tilda-regular,.Tilda-semibold,.Tilda-bold {
+  font-family: "Tilda", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-.manrope-semibold{
+.Tilda-semibold{
   font-weight: 700;
 }
-.manrope-bold{
-  font-weight: 900;
+.Tilda-bold{
+  line-height: 1.55;
+  font-weight: 700;
+
 }
 body {
         
-  font-family: "Manrope", sans-serif;
+  font-family: "Tilda", sans-serif;
   font-weight: 400;
   }
-.anekFont{
-  font-family: 'anek', sans-serif;
+.DrukFont{
+  font-family: 'Druk', Arial, sans-serif;
 }
       .swiper-slide img {
         width: 250px;
@@ -104,7 +124,7 @@ body {
   position: relative;
 }
 .read-more span img{
-  height: 11px!important;
+  height: 24px!important;
   transform: rotate(-180deg);
 }
 .read-more.less span img{
@@ -143,4 +163,7 @@ footer{
 }
 .dropdown li a{
   color: #fff;
+}
+.line-height-4{
+  line-height: 1.8;
 }
