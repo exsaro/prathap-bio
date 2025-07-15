@@ -43,7 +43,6 @@ html {
 
 }
 body {
-        
   font-family: "Tilda", sans-serif;
   font-weight: 400;
   }
@@ -166,4 +165,19 @@ footer{
 }
 .line-height-4{
   line-height: 1.8;
+}
+.heiglight{
+  color: #FF6200;
+}
+.proj-link{
+  position: relative;
+}
+.proj-link:after{
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 4px;
+  background: #FF700A;
+  bottom: -25px;
+  left: 0;
 }
