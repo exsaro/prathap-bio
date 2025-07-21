@@ -146,16 +146,16 @@ footer{
 }
 .mail{
   position: relative;
+  display: inline;
 }
 .mail:after{
   content: '';
   position: absolute;
-  width: 100px;
+  width: 100%;
   height: 4px;
   background: #FF700A;
   bottom: -25px;
-  left: 50%;
-  margin-left: -50px;
+  left: 0;
 }
 .dropdown{
   background: #000;
