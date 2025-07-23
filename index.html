@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css?v=1.0" />
 </head>
 
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 min-h-screen flex flex-col">
   <a href="#main-content"
     class="sr-only focus:not-sr-only absolute top-0 left-0 bg-blue-500 text-white px-4 py-2 z-50">Skip to main
     content</a>
@@ -22,25 +22,27 @@
   <div id="loader" class="loader"></div>
 
   <!-- Page Content -->
-  <div id="page" class="page-content">
+  <div id="page" class="page-content flex-grow flex flex-col">
     <!-- Header -->
     <header class="flex items-center justify-between p-4 sticky top-0 left-0 right-0 z-10">
       <h1><a href="index.html"><img src="image/logo.svg" alt=""></a></h1>
       <div class="relative menu-hover">
         <div class="text-2xl cursor-pointer"><img src="image/hamburger.svg" alt=""></div>
         <div class="dropdown">
-          <a href="index.html" class="nav-link" data-target="top">Home</a>
+          <!-- <a href="index.html" class="nav-link" data-target="top">Home</a> -->
           <a href="#main-content" class="nav-link" data-target="main-content">About</a>
           <a href="projects.html" class="nav-link" data-target="projects">Projects</a>
-          <a href="projects.html#contact" class="nav-link" data-target="contact">Contact</a>
+          <a href="contact.html" class="nav-link" data-target="contact">Contact</a>
         </div>
       </div>
     </header>
 
+    <div class="flex-grow flex flex-col">
+
     <!-- Hero Section -->
     <section id="main-content" class="px-6 lg:py-32 py-12 max-w-6xl mx-auto">
-      <p class="DrukFont lg:text-6xl text-4xl text-black">HI</p>
-      <h2 class="DrukFont text-black lg:text-6xl text-4xl">I'M <span class="lg:text-7xl text-5xl">PRATHAP</span></h2>
+      <!-- <p class="DrukFont lg:text-6xl text-4xl text-black">HI</p>
+      <h2 class="DrukFont text-black lg:text-6xl text-4xl">I'M <span class="lg:text-7xl text-5xl">PRATHAP</span></h2> -->
       <p class="Tilda-bold uppercase text-3xl text-black my-8">Sound Designer</p>
 
       <div class="text-sm space-y-4">
@@ -56,16 +58,19 @@
           <p class="Tilda text-3xl line-height-4 mb-5">An intimate understanding of the <span class="heiglight">narrative</span> and its needs is one of my key strengths. I have a voracious appetite for challenges and can work well under <span class="heiglight">pressure</span> in fast-paced environments. Proficient in a variety of genres, including (but not limited to) shorts, features, ads web series, docus, gaming, virtual reality, etc. with a keen ear and <span class="heiglight">senses</span> for detail and commitment to deliver.</p>
           <p class="Tilda text-3xl line-height-4 mb-5">Skilled in collaborating with cross-functional teams, troubleshooting technical issues, committed to staying up- to-date with emerging technologies and trends.</p>
           <p class="Tilda text-3xl line-height-4 mb-5">I have the privilege of possessing a track record of success, outstanding results, and client satisfaction. And most importantly, <span class="heiglight">long-lasting</span> collaborations with creative minds.</p>
-          <p class="Tilda text-3xl line-height-4">I head <span class="heiglight">WAVE WORX</span>, where my team of <span class="heiglight">home-grown</span> artists work with me to deliver a whole new perspective on sound, and an ideal client experience.</p>
+          <p class="Tilda text-3xl line-height-4">I head <span class="heiglight underline"><a href="www.wave-worx.com" target="_blank">WAVE WORX</a></span>, where my team of <span class="heiglight">home-grown</span> artists work with me to deliver a whole new perspective on sound, and an ideal client experience.</p>
           <a class="read-more text-3xl line-height-4 Tilda-semibold ml-2 inline-flex items-center cursor-pointer less"
             onclick="toggleReadMore()">Read Less <span class="ml-1"><img src="image/up-arrow.svg" alt=""></span></a>
         </div>
       </div>
     </section>
 
-    <section class="px-6 lg:pb-32 pb-12 max-w-6xl mx-auto">
+    <section class="px-6 lg:pb-32 pb-12">
+      <div class="max-w-6xl mx-auto">
       <p class="DrukFont lg:text-7xl text-5xl text-black proj-link"><a href="projects.html">Projects</a></p>
+      </div>
     </section>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center text-[16px] text-black py-4">
